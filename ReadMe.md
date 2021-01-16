@@ -1,8 +1,8 @@
-# GAN Style Transfer
+# GAN Style Transfer  
 
 # Team Name : GAN때문이야  
 
-## Member
+## Member  
 |소속|이름  | 비고|
 |--|--|--|
 |컴퓨터 과학과|정창현|팀장|
@@ -13,9 +13,8 @@
 |컴퓨터 과학과|안지민|모델 설계|
 
 # 프로젝트 요약  
-Cycle GAN을 이용하여 paired data가 없이도 학습이 가능하도록 하였다.  
-
-Cycle GAN 의 Generator에는 U-Net, Discriminator 에는 fully connected layer을 적용하였고, 미국의 tv 애니메이션인 The simpsons의 스타일을 Learning하여 input 영상을 simpson 풍의 영상으로 변환하여 출력해줍니다.  
+- Cycle GAN을 이용하여 paired data가 없이도 학습이 가능하도록 하였다.  
+- Cycle GAN 의 Generator에는 U-Net, Discriminator 에는 fully connected layer을 적용하였고, 미국의 tv 애니메이션인 The simpsons의 스타일을 Learning하여 input 영상을 simpson 풍의 영상으로 변환하여 출력함.  
 
 ## 모델
 
@@ -37,7 +36,8 @@ Cycle GAN 의 Generator에는 U-Net, Discriminator 에는 fully connected layer�
 ![converted](./images/converted.gif)
 
 
----
+---  
+
 # 참고자료  
 
 - [Generative Adversarial Nets](https://proceedings.neurips.cc/paper/2014/hash/5ca3e9b122f61f8f06494c97b1afccf3-Abstract.html)
