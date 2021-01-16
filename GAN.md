@@ -18,7 +18,7 @@
 - Discriminator : 경찰, 목표는 진짜 지폐와 위조지폐를 구분하는 것  
 - 이 둘을 계속 learning 시키면 언젠가는 진짜 지폐와 다를 것 없는 가짜 지폐를 만들어내는 Generator를 얻을 수 있음. (Adversarial Training)  
 
-## 아키텍처  
+## Architecture
 
 ![image](https://user-images.githubusercontent.com/32921115/104805680-39127300-5815-11eb-90b6-ddb1310943e5.png)
 
@@ -81,3 +81,12 @@
 ![image](https://user-images.githubusercontent.com/32921115/104814987-36377280-5855-11eb-83de-b97cf6fcb575.png)
 
 - Loss를 작게하는 G, F를 찾고 반대로 Loss를 크게 하는 Dx, Dy를 찾는 적대적 learning을 하게 된다.  
+
+### Architecture
+**- Cycle GAN Framework**  
+
+![image](https://user-images.githubusercontent.com/32921115/104815327-202ab180-5857-11eb-9138-02773be9e40d.png)
+
+**- Cycle Consistency**  
+
+![image](https://user-images.githubusercontent.com/32921115/104815232-a692c380-5856-11eb-9161-2900eef1c4ba.png)
