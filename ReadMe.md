@@ -1,18 +1,6 @@
 # GAN Style Transfer
 
 
-# project about
-이 프로젝트는 GAN을 이용하여 사진의 style을 여러 화가들의 화풍으로 변경해주는것을 목표로 하는 프로젝트 입니다. 처음에는 GAN을 이용하여 그 결과물을 단기간동안 web으로 서비스 할 예정이고, 이후에는 모델에 GAN의 variation을 적용하여서 학습 효율을 높이는 작업을 할 예정입니다. 
-
-This project is about style transfer which converts the style of the photo to other painter's styles using GAN. At first, we serve the output of GAN using the web temporarily. After that, we apply GAN's variation to make the model more works well.
-
-# 프로젝트 요약
-Cycle GAN을 이용하여 paired data가 없이도 학습이 가능하도록 하였습니다.
-
-Cycle GAN 의 Generator에는 U-Net, Discriminator 에는 fully connected layer을 적용하였고,
-미국의 tv 애니메이션인 The simpsons 의 스타일을 학습하여
-input 영상을 simpson 풍의 영상으로 변환하여 출력해줍니다.
-
 # Team Name : GAN때문이야
 
 ## Member
@@ -24,6 +12,11 @@ input 영상을 simpson 풍의 영상으로 변환하여 출력해줍니다.
 |휴먼지능정보학과|추희승|
 |컴퓨터 과학과|강대훈|
 |컴퓨터 과학과|안지민|모델 설계|
+
+# 프로젝트 요약
+Cycle GAN을 이용하여 paired data가 없이도 학습이 가능하도록 하였다.  
+
+Cycle GAN 의 Generator에는 U-Net, Discriminator 에는 fully connected layer을 적용하였고, 미국의 tv 애니메이션인 The simpsons의 스타일을 Learning하여 input 영상을 simpson 풍의 영상으로 변환하여 출력해줍니다.  
 
 
 ## 프로젝트 계획 및 일정
