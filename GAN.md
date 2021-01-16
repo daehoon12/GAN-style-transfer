@@ -62,6 +62,7 @@
 1. Adversarial Loss  
 
 ![image](https://user-images.githubusercontent.com/32921115/104814699-bf4daa00-5853-11eb-988b-1ae48aaf709a.png)
+- 생성된 이미지의 분포를 **대상 도메인의 데이터 분포와 일치시키기 위한** Loss Function  
 - G : X -> Y Translator  
 - Dy : Y Discriminator  
 - y~P_data(y) : Y의 data 분포를 따르는 원소 y  
@@ -72,6 +73,7 @@
 
 ![image](https://user-images.githubusercontent.com/32921115/104814956-fa9ca880-5854-11eb-8130-278f80b06c57.png)
 
+- **G와 F를 통과하기 전 데이터와 통과한 후 데이터**가 서로 **모순되는 것을 방지**하기 위한 Loss Fucntion  
 - **L1 Loss**를 사용해 **F(G(x)), G(F(y))를 x,y에 가깝게** 만들어 Cycle Consistent하게 만들어준다.  
 
 3. 최종 Loss  
