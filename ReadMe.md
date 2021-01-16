@@ -47,7 +47,12 @@ input 영상을 simpson 풍의 영상으로 변환하여 출력해줍니다.
 ## 모델
 [/model](./model)
 
-# 프로젝트 결과
+## 절차  
+1) 영상을 Input으로 넣어 Frame 별로 나눈다.  
+2) Frame 별로 나눈 도메인들을 Cycle GAN에 넣는다.  
+3) 애니메이션 화풍으로 변환된 도메인들을 다시 동영상으로 변환 시킨다.  
+
+## 프로젝트 결과
 > original
 
 ![original](./images/original.gif)
