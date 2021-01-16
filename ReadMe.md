@@ -17,25 +17,6 @@ Cycle GAN을 이용하여 paired data가 없이도 학습이 가능하도록 하
 
 Cycle GAN 의 Generator에는 U-Net, Discriminator 에는 fully connected layer을 적용하였고, 미국의 tv 애니메이션인 The simpsons의 스타일을 Learning하여 input 영상을 simpson 풍의 영상으로 변환하여 출력해줍니다.  
 
-
-## 프로젝트 계획 및 일정
-
-|날짜|내용| 수행 여부|
-|--|--|--|
-|9/10|GAN, 머신러닝에 대한 공부| |
-|9/17|[GAN 논문](http://papers.nips.cc/paper/5423-generative-adversarial-nets.pdf) 리뷰 및 질의응답| |
-|9/24|모델 구상 및 설계| |
-|10/01|모델 구상 및 설계| |
-|10/08|모델 학습 및 하이퍼 파라미터 조정| |
-|10/29|모델 학습 및 하이퍼 파라미터 조정| |
-|11/05|모델 학습 및 하이퍼 파라미터 조정| |
-|11/12|GAN variation 적용 & 웹 서버 구축| |
-|11/19|GAN variation 적용 & 웹 서버 구축| |
-|11/26|문서작업| |
-|12/03|프로젝트 마무리| |
-
-* 프로젝트 일정은 조정될 수 있습니다.
-
 ## 모델
 [/model](./model)
 
