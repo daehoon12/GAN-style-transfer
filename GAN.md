@@ -35,3 +35,29 @@
 - 오른쪽 항 : **Generator의 목표는 D(G(z))의 값이 1이 되게 만들어야 한다.** log(1-x) 함수는 0에서 1로 갈수록 값이 작아지므로, Generator 입장에서 **오른쪽 항의 값은 작아져야 한다.**  
 - 즉, **Generator 입장에서 Loss Fucntion이 작은 값을 가져야 성능이 좋다고 말할 수있다.** 이는 곳 우리의 목적과 같음.  
 - 맨 처음의 D(G(z))의 값은 0에 가까울 것 -> Loss가 큼.  
+
+## Cycle GAN  
+
+### 나오게 된 배경  
+- Image-to-image traslation은 짝이 있는 Image Training Set를 이용해 Input과 Output 이미지를 매핑하는 것이 목표인 Computer Vision 분야 중 하나. But, 짝이 지어진 Training Data를 얻는 것은 쉽지 않고 만들기도 어렵다.  
+- **짝 지어진 Data없이** X라는 도메인으로부터 얻은 이미지를 Target인 Y로 바꾸면 어떨까? 해서 나온 Model  
+
+### 원리  
+1. Domain X를 Domain Y로 바꿔주는 **Translator G : X->Y를 GAN**으로 구현.  
+  - pair dataset이 필요없이 X를 넣었을 때, Y를 생성할 수 있음.  
+  - But, X 분포와 Y 분포에 대응하는 관계가 매우 많기 때문에 x와 y가 pair인지 보장할 수 없음 (풍경사진을 넣을 때 그 사진과 관련없는 모네 그림이 나올 수 있음)  
+  
+2. 위의 단점을 개선시키기 위해 **Cycle Consistent**라는 개념을 이용  
+  - Cycle Consistent : Domain X에서 Y로 바꿨을 때, **다시 Y에서 translate 할 때 X가 나오는** 일관성.  
+  - 반대 방향으로 도메인을 바꿔주는 translator F :Y -> X를 정의  
+  
+3. G(x)에서 나오는 Output을 y' F(y)에서 나오는 output을 x'라 할 때, **F(y') = x, G(x') = y**를 만족하는 방향으로 learning을 한다.  
+
+4. 점점 **G(x) = y'은 y와 F(y) = x'는 x와 근사**하게 된다.  
+
+5. 이 과정에서 GAN 2개가 Cycle 구조로 사용되기 때문에 **CycleGAN으로 불린다.**  
+
+### Loss  
+
+1. Adversarial Loss  
+- 
