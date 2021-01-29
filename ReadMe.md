@@ -25,9 +25,12 @@
 
 [/model](./model)  
 
-### Loss, Optimizer
-- GAN Loss : Binary Cross Entropy, cycle Consistency Loss : L1 Loss  
-- Optimizer : Adam  
+### Discriminator : 3 layers DNN, Generator : Unet_256  
+### GAN LOSS : Binary Cross Entropy, Cycle Consistency Loss : L1 Loss  
+### Optimizer : Adam  
+### Stocastic Gradient Descent 적용  
+### Epochs : 200  
+
 
 
 ## 절차  
