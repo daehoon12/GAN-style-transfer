@@ -16,6 +16,11 @@
 - Cycle GAN을 이용하여 paired data가 없이도 학습이 가능하도록 하였다.  
 - Cycle GAN 의 **Generator에는 U-Net, Discriminator 에는 fully connected layer을 적용**하였고, 미국의 tv 애니메이션인 The simpsons의 스타일을 Learning하여 input 영상을 simpson 풍의 영상으로 변환하여 출력함.  
 
+# Stack  
+
+### Model Framework : Pytorch  
+### 동영상 Frame 단위 적용 및 소리 추출 : Python의 moviepy.audio.io,moviepy.video.io를 import해서 사용  
+
 ## 모델
 
 [/model](./model)  
