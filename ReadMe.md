@@ -20,6 +20,11 @@
 
 [/model](./model)  
 
+### Loss, Optimizer
+- GAN Loss : Binary Cross Entropy, cycle Consistency Loss : L1 Loss  
+- Optimizer : Adam  
+
+
 ## 절차  
 1) 영상을 Input으로 넣어 Frame 별로 나눈다.  
 2) Frame 별로 나눈 도메인들을 Cycle GAN에 넣는다.  
