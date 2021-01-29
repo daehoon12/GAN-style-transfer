@@ -18,18 +18,18 @@
 
 # Stack  
 
-### Model Framework : Pytorch  
-### 동영상 Frame 단위 적용 및 소리 추출 : Python의 moviepy.audio.io,moviepy.video.io를 import해서 사용  
+#### Model Framework : Pytorch  
+#### 동영상 Frame 단위 적용 및 소리 추출 : Python의 moviepy.audio.io,moviepy.video.io를 import해서 사용  
 
 ## 모델
 
 [/model](./model)  
 
-### Discriminator : 3 layers DNN, Generator : Unet_256  
-### GAN LOSS : Binary Cross Entropy, Cycle Consistency Loss : L1 Loss  
-### Optimizer : Adam  
-### Stocastic Gradient Descent 적용  
-### Epochs : 200  
+#### Discriminator : 3 layers DNN, Generator : Unet_256  
+#### GAN Loss : Binary Cross Entropy, Cycle Consistency Loss : L1 Loss  
+#### Optimizer : Adam  
+#### Stocastic Gradient Descent 적용  
+#### Epochs : 200  
 
 
 
